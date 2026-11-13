@@ -509,6 +509,42 @@
   line-height: 1.7;
 }
 
+.m_profile-hobbies {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.m_profile-hobbies__title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.m_hobby-card {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.m_hobby-card__icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lavender-soft);
+  color: var(--lavender-dark);
+  font-size: 14px;
+}
+
+.m_hobby-card__title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .m_contact-eyebrow {
   color: var(--lavender);
 }
@@ -593,6 +629,7 @@
   .m_profile-art {
     min-height: 300px;
   }
+
 }
 
 @media (max-width: 430px) {

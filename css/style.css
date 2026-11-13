@@ -561,6 +561,42 @@ a:focus-visible {
   line-height: 1.7;
 }
 
+.m_profile-hobbies {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.m_profile-hobbies__title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.m_hobby-card {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.m_hobby-card__icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lavender-soft);
+  color: var(--lavender-dark);
+  font-size: 14px;
+}
+
+.m_hobby-card__title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .m_contact-eyebrow {
   color: var(--lavender);
 }
@@ -645,6 +681,7 @@ a:focus-visible {
   .m_profile-art {
     min-height: 300px;
   }
+
 }
 
 @media (max-width: 430px) {
@@ -778,6 +815,12 @@ a:focus-visible {
   padding-block: 112px;
 }
 
+.l_profile__hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .l_contact {
   padding-block: 88px;
   background: var(--ink-soft);
@@ -829,6 +872,10 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .l_profile__hobbies-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .l_profile {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -874,6 +921,7 @@ a:focus-visible {
   .l_profile {
     padding-block: 80px;
   }
+
 }
 
 @media (max-width: 430px) and (max-height: 700px) {
