@@ -242,13 +242,6 @@ a:focus-visible {
   line-height: 1.16;
 }
 
-.m_hero-title__emphasis {
-  color: #d7c6f4;
-  font-family: var(--serif);
-  font-weight: 400;
-  letter-spacing: -.055em;
-}
-
 .m_hero-name-ja {
   margin-top: 8px;
   color: #f5f3f7;
