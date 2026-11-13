@@ -20,13 +20,46 @@
 }
 
 .l_hero {
+  position: relative;
   display: grid;
+  overflow: hidden;
+  isolation: isolate;
   min-height: calc(100vh - 81px);
   min-height: calc(100svh - 81px);
-  grid-template-columns: 1.05fr .95fr;
   align-items: center;
-  gap: 40px;
   padding-block: 32px;
+}
+
+.l_hero::before,
+.l_hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.l_hero::before {
+  inset: -180px 0;
+  transform: translate3d(0, var(--hero-parallax-offset, 0), 0);
+  background: url("../img/kv.jpeg") 62% center / cover no-repeat;
+}
+
+.l_hero::after {
+  background:
+    linear-gradient(0deg, rgb(20 19 24 / 24%), transparent 48%),
+    linear-gradient(
+      90deg,
+      rgb(20 19 24 / 86%) 0%,
+      rgb(20 19 24 / 76%) 32%,
+      rgb(20 19 24 / 50%) 54%,
+      rgb(20 19 24 / 14%) 78%,
+      transparent 100%
+    );
+}
+
+.l_hero__inner {
+  position: relative;
 }
 
 .l_works {
@@ -60,9 +93,9 @@
 }
 
 .l_profile__hobbies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
 }
 
 .l_contact {
@@ -96,9 +129,22 @@
   .l_hero {
     min-height: calc(100vh - 73px);
     min-height: calc(100svh - 73px);
-    grid-template-columns: 1fr;
-    gap: 40px;
     padding-block: 32px;
+  }
+
+  .l_hero::before {
+    background-position: 66% center;
+  }
+
+  .l_hero::after {
+    background:
+      linear-gradient(0deg, rgb(20 19 24 / 28%), transparent 52%),
+      linear-gradient(
+        90deg,
+        rgb(20 19 24 / 82%) 0%,
+        rgb(20 19 24 / 68%) 54%,
+        rgb(20 19 24 / 58%) 100%
+      );
   }
 
   .l_works,
@@ -114,10 +160,6 @@
 
   .l_skills__grid {
     grid-template-columns: 1fr;
-  }
-
-  .l_profile__hobbies-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .l_profile {
@@ -154,7 +196,6 @@
   .l_hero {
     min-height: calc(100vh - 106px);
     min-height: calc(100svh - 106px);
-    gap: 24px;
     padding-block: 24px;
   }
 
@@ -170,7 +211,6 @@
 
 @media (max-width: 430px) and (max-height: 700px) {
   .l_hero {
-    gap: 16px;
     padding-block: 8px;
   }
 }

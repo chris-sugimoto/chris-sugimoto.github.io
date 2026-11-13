@@ -223,15 +223,27 @@ a:focus-visible {
   content: "";
 }
 
+.m_hero-content {
+  max-width: 640px;
+}
+
+.l_hero .m_eyebrow {
+  color: #f5f3f7;
+}
+
+.l_hero .m_hero-title {
+  color: #fff;
+}
+
 .m_hero-title {
-  font-size: clamp(48px, 6vw, 80px);
+  font-size: clamp(56px, 8vw, 104px);
   font-weight: 600;
   letter-spacing: -.075em;
   line-height: 1.16;
 }
 
 .m_hero-title__emphasis {
-  color: var(--lavender-dark);
+  color: #d7c6f4;
   font-family: var(--serif);
   font-weight: 400;
   letter-spacing: -.055em;
@@ -239,17 +251,17 @@ a:focus-visible {
 
 .m_hero-name-ja {
   margin-top: 8px;
-  color: var(--lavender-dark);
+  color: #f5f3f7;
   font-size: 16px;
   letter-spacing: .08em;
 }
 
 .m_hero-copy {
-  max-width: 432px;
-  margin-block: 24px 32px;
-  color: #62606a;
+  max-width: 480px;
+  margin-block: 24px 40px;
+  color: #f5f3f7;
   font-size: 16px;
-  line-height: 2.1;
+  line-height: 1.9;
 }
 
 .m_button {
@@ -273,6 +285,17 @@ a:focus-visible {
   color: var(--ink);
 }
 
+.l_hero .m_button {
+  border-color: #d7c6f4;
+  background: #d7c6f4;
+  color: var(--ink);
+}
+
+.l_hero .m_button:hover {
+  background: transparent;
+  color: #fff;
+}
+
 .m_button--contact {
   flex: 0 0 auto;
   border-color: var(--lavender);
@@ -283,75 +306,6 @@ a:focus-visible {
 .m_button--contact:hover {
   background: transparent;
   color: var(--lavender);
-}
-
-.m_hero-art {
-  position: relative;
-  display: grid;
-  min-height: 408px;
-  overflow: hidden;
-  place-items: center;
-  border-radius: 4px;
-  background: var(--ink);
-}
-
-.m_hero-art::before,
-.m_hero-art::after {
-  position: absolute;
-  border: 1px solid rgb(255 255 255 / 22%);
-  border-radius: 50%;
-  content: "";
-}
-
-.m_hero-art::before {
-  width: 360px;
-  height: 360px;
-}
-
-.m_hero-art::after {
-  width: 272px;
-  height: 272px;
-}
-
-.m_hero-art__sun {
-  position: absolute;
-  top: 56px;
-  right: 72px;
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-  background: var(--lavender);
-}
-
-.m_hero-art__orbit {
-  position: absolute;
-  z-index: 1;
-  width: 432px;
-  height: 152px;
-  transform: rotate(-35deg);
-  border: 1px solid rgb(255 255 255 / 34%);
-  border-radius: 50%;
-}
-
-.m_hero-art__name {
-  position: relative;
-  z-index: 2;
-  color: var(--lavender);
-  font-family: var(--serif);
-  font-size: clamp(72px, 10vw, 128px);
-  letter-spacing: -.1em;
-  line-height: 1;
-}
-
-.m_hero-art__note {
-  position: absolute;
-  z-index: 2;
-  right: 24px;
-  bottom: 24px;
-  color: #f0edf4;
-  font-family: var(--serif);
-  font-size: 12px;
-  letter-spacing: .08em;
 }
 
 .m_section-heading {
@@ -493,8 +447,18 @@ a:focus-visible {
 }
 
 .m_skill-card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   font-size: 20px;
   font-weight: 600;
+}
+
+.m_skill-card__icon {
+  flex: 0 0 auto;
+  color: var(--lavender-dark);
+  font-size: 24px;
 }
 
 .m_skill-card__copy {
@@ -562,39 +526,34 @@ a:focus-visible {
 }
 
 .m_profile-hobbies {
-  margin-top: 24px;
-  padding-top: 20px;
+  margin-top: 16px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
 }
 
 .m_profile-hobbies__title {
-  margin-bottom: 16px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .m_hobby-card {
-  display: grid;
+  display: inline-flex;
   min-width: 0;
-  grid-template-columns: 48px minmax(0, 1fr);
   align-items: center;
   gap: 8px;
 }
 
 .m_hobby-card__icon {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--lavender-soft);
-  color: var(--lavender-dark);
-  font-size: 14px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .m_hobby-card__title {
-  font-size: 14px;
-  font-weight: 600;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .m_contact-eyebrow {
@@ -661,14 +620,6 @@ a:focus-visible {
     padding: 12px;
   }
 
-  .m_hero-copy {
-    max-width: 480px;
-  }
-
-  .m_hero-art {
-    min-height: 352px;
-  }
-
   .m_section-heading {
     display: block;
     margin-bottom: 28px;
@@ -693,17 +644,6 @@ a:focus-visible {
 
   .m_nav__link--contact {
     padding: 8px 12px;
-  }
-
-  .m_hero-art {
-    min-height: 256px;
-  }
-
-  .m_hero-art__sun {
-    top: 40px;
-    right: 40px;
-    width: 72px;
-    height: 72px;
   }
 
   .m_work-card__title,
@@ -739,9 +679,6 @@ a:focus-visible {
     min-height: 48px;
   }
 
-  .m_hero-art {
-    min-height: 136px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -776,13 +713,46 @@ a:focus-visible {
 }
 
 .l_hero {
+  position: relative;
   display: grid;
+  overflow: hidden;
+  isolation: isolate;
   min-height: calc(100vh - 81px);
   min-height: calc(100svh - 81px);
-  grid-template-columns: 1.05fr .95fr;
   align-items: center;
-  gap: 40px;
   padding-block: 32px;
+}
+
+.l_hero::before,
+.l_hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.l_hero::before {
+  inset: -180px 0;
+  transform: translate3d(0, var(--hero-parallax-offset, 0), 0);
+  background: url("../img/kv.jpeg") 62% center / cover no-repeat;
+}
+
+.l_hero::after {
+  background:
+    linear-gradient(0deg, rgb(20 19 24 / 24%), transparent 48%),
+    linear-gradient(
+      90deg,
+      rgb(20 19 24 / 86%) 0%,
+      rgb(20 19 24 / 76%) 32%,
+      rgb(20 19 24 / 50%) 54%,
+      rgb(20 19 24 / 14%) 78%,
+      transparent 100%
+    );
+}
+
+.l_hero__inner {
+  position: relative;
 }
 
 .l_works {
@@ -816,9 +786,9 @@ a:focus-visible {
 }
 
 .l_profile__hobbies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
 }
 
 .l_contact {
@@ -852,9 +822,22 @@ a:focus-visible {
   .l_hero {
     min-height: calc(100vh - 73px);
     min-height: calc(100svh - 73px);
-    grid-template-columns: 1fr;
-    gap: 40px;
     padding-block: 32px;
+  }
+
+  .l_hero::before {
+    background-position: 66% center;
+  }
+
+  .l_hero::after {
+    background:
+      linear-gradient(0deg, rgb(20 19 24 / 28%), transparent 52%),
+      linear-gradient(
+        90deg,
+        rgb(20 19 24 / 82%) 0%,
+        rgb(20 19 24 / 68%) 54%,
+        rgb(20 19 24 / 58%) 100%
+      );
   }
 
   .l_works,
@@ -870,10 +853,6 @@ a:focus-visible {
 
   .l_skills__grid {
     grid-template-columns: 1fr;
-  }
-
-  .l_profile__hobbies-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .l_profile {
@@ -910,7 +889,6 @@ a:focus-visible {
   .l_hero {
     min-height: calc(100vh - 106px);
     min-height: calc(100svh - 106px);
-    gap: 24px;
     padding-block: 24px;
   }
 
@@ -926,7 +904,6 @@ a:focus-visible {
 
 @media (max-width: 430px) and (max-height: 700px) {
   .l_hero {
-    gap: 16px;
     padding-block: 8px;
   }
 }

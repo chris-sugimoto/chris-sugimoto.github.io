@@ -7,6 +7,7 @@
   <meta name="description" content="杉本くりす / Chris Sugimoto。Webサイトの制作・保守運用、フロントエンド開発のポートフォリオです。">
   <title>Chris Sugimoto | Front-end Developer</title>
   <script>document.documentElement.classList.add("l_page--preparing");</script>
+  <link rel="preload" as="image" href="img/kv.jpeg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
@@ -40,19 +41,15 @@
   </header>
 
   <main>
-    <section class="l_container l_hero" id="top" aria-labelledby="hero-title">
-      <div>
-        <p class="m_eyebrow">WEB CODER / TOKYO</p>
-        <h1 class="m_hero-title" id="hero-title">Chris<br><span class="m_hero-title__emphasis">Sugimoto</span></h1>
-        <p class="m_hero-name-ja">杉本 くりす</p>
-        <p class="m_hero-copy">現場で培った視点を大切に、<br>Webの力でできることを広げていく。</p>
-        <a class="m_button" href="#works">制作実績を見る</a>
-      </div>
-      <div class="m_hero-art" aria-hidden="true">
-        <span class="m_hero-art__sun"></span>
-        <span class="m_hero-art__orbit"></span>
-        <span class="m_hero-art__name">Design<br>with care.</span>
-        <span class="m_hero-art__note">Independent web creator — 2026</span>
+    <section class="l_hero" id="top" aria-labelledby="hero-title">
+      <div class="l_container l_hero__inner">
+        <div class="m_hero-content">
+          <p class="m_eyebrow">WEB CODER / TOKYO</p>
+          <h1 class="m_hero-title" id="hero-title">Chris<br><span class="m_hero-title__emphasis">Sugimoto</span></h1>
+          <p class="m_hero-name-ja">杉本 くりす</p>
+          <p class="m_hero-copy">現場で培った視点を大切に、<br>Webの力でできることを広げていく。</p>
+          <a class="m_button" href="#works">制作実績を見る</a>
+        </div>
       </div>
     </section>
 
@@ -156,17 +153,17 @@
         </div>
         <div class="l_skills__grid">
           <article class="m_skill-card">
-            <h3 class="m_skill-card__title">Web Coding</h3>
-            <p class="m_skill-card__copy">HTML・CSS・JavaScriptでの実装に加え、デザインツールを使った制作にも対応します。</p>
+            <h3 class="m_skill-card__title">Web Coding <span class="m_skill-card__icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span></h3>
+            <p class="m_skill-card__copy">HTML・CSS・JavaScriptで実装し、デザインをピクセルパーフェクトに再現することを得意としています。</p>
             <ul class="m_tag-list"><li>HTML</li><li>CSS / Sass</li><li>JavaScript</li><li>jQuery</li><li>Figma</li><li>Photoshop</li><li>Illustrator</li></ul>
           </article>
           <article class="m_skill-card">
-            <h3 class="m_skill-card__title">WordPress</h3>
+            <h3 class="m_skill-card__title">WordPress <span class="m_skill-card__icon" aria-hidden="true"><i class="fa-brands fa-wordpress"></i></span></h3>
             <p class="m_skill-card__copy">オリジナルテーマ構築や、更新・運用しやすいサイト制作に対応します。</p>
             <ul class="m_tag-list"><li>Original Theme</li><li>Custom Post Type</li><li>Custom Taxonomy</li><li>Block Editor</li></ul>
           </article>
           <article class="m_skill-card">
-            <h3 class="m_skill-card__title">Team &amp; AI</h3>
+            <h3 class="m_skill-card__title">Team &amp; AI <span class="m_skill-card__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span></h3>
             <p class="m_skill-card__copy">実装経験を活かしてAIの生成物を見極め、品質・保守性・使いやすさを整えます。</p>
             <ul class="m_tag-list"><li>Frontend Support</li><li>Direction</li><li>AI-assisted Coding</li></ul>
           </article>
