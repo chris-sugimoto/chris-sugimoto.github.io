@@ -1,0 +1,153 @@
+.l_container {
+  width: min(1120px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.l_header {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  border-bottom: 1px solid #494750;
+  background: rgb(36 34 41 / 96%);
+  backdrop-filter: blur(14px);
+}
+
+.l_header__inner {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.l_hero {
+  display: grid;
+  min-height: 648px;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 40px;
+  padding-block: 72px 96px;
+}
+
+.l_works {
+  padding-block: 112px;
+  background: #fff;
+}
+
+.l_works__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 24px;
+}
+
+.l_skills {
+  padding-block: 112px;
+  background: #e9e7ed;
+}
+
+.l_skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.l_profile {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  align-items: center;
+  gap: min(10vw, 120px);
+  padding-block: 112px;
+}
+
+.l_contact {
+  padding-block: 88px;
+  background: var(--ink-soft);
+  color: #fff;
+}
+
+.l_contact__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.l_footer {
+  padding-block: 24px;
+  background: var(--ink);
+  color: #f0edf4;
+}
+
+@media (max-width: 760px) {
+  .l_container {
+    width: min(100% - 40px, 560px);
+  }
+
+  .l_header__inner {
+    min-height: 72px;
+  }
+
+  .l_hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-block: 68px 72px;
+  }
+
+  .l_works,
+  .l_skills,
+  .l_profile {
+    padding-block: 80px;
+  }
+
+  .l_works__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 16px;
+  }
+
+  .l_skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .l_profile {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .l_contact {
+    padding-block: 72px;
+  }
+
+  .l_contact__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    scroll-padding-top: 112px;
+  }
+
+  .l_container {
+    width: calc(100% - 32px);
+  }
+
+  .l_header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding-block: 12px;
+  }
+
+  .l_hero {
+    padding-top: 56px;
+  }
+
+  .l_works__grid {
+    gap: 28px 12px;
+  }
+
+  .l_profile {
+    padding-block: 80px;
+  }
+}

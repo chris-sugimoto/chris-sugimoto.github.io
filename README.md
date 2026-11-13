@@ -1,4 +1,3 @@
-# chris-sugimoto.github.io
 # Frontend Developer
 
 コーダー歴9年。
