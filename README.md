@@ -1,27 +1,33 @@
-# Frontend Developer
+# 杉本くりす | Chris Sugimoto
 
-コーダー歴9年。
-Webサイトのコーディングを中心に活動しています。
+Webサイトの制作・保守運用、フロントエンド開発に携わるコーダーです。現場で培った視点を大切に、Webサイトの制作から運用まで丁寧に取り組んでいます。
 
-## Skills
+## プロフィール
 
-- HTML
-- CSS / Sass
-- JavaScript
-- jQuery
-- PHP
-- WordPress
-- Git / GitHub
+- 兵庫県出身、東京を拠点に活動
+- コーダー歴9年
+- HAL大阪で2年間Web制作を学び、上京後は都内の制作会社で経験を積む
+- LP・コーポレートサイトの制作、WordPressサイト構築を担当
+- サイト全体のリニューアルや保守運用、既存フロントエンド業務の引き継ぎ、軽微なディレクションを経験
+- AIを制作のパートナーとして活用し、品質・保守性・使いやすさを整える
 
-## Experience
+## スキル・対応領域
 
-- Webサイト制作
-- 大規模Web開発
-- Figmaデザインからのコーディング
-- レスポンシブ対応
+- **Webコーディング:** HTML、CSS / Sass、JavaScript、jQuery
+- **WordPress:** オリジナルテーマ構築、カスタム投稿タイプ・タクソノミー、ブロックエディターのカスタマイズ
+- **デザイン・テンプレート:** Figma、Photoshop、Illustrator、Nunjucks、EJS
+- **チーム・制作支援:** フロントエンド業務の引き継ぎ、軽微なディレクション、AIを活用したコーディング
 
-## Portfolio
+## 制作・参画実績
 
-- Portfolio Website
-- Corporate Website
-- Landing Page
+掲載実績の一部です。
+
+- 宿泊予約サイト「Relax」: UIリニューアル、保守運用
+- 参考書検索・メディア「Studico」: フロントエンド、WordPressテーマ・エディターのカスタマイズ
+- フィットネスクラブ公式サイト「TIPNESS」: 保守運用
+- 自動車メーカー公式サイト「Renault」: 保守運用
+- 飲食店居抜き売却サイト「居抜き売却市場」: サイトリニューアル、WordPressテーマ構築
+
+## ポートフォリオ
+
+ポートフォリオサイト: https://chris-sugimoto.github.io/
